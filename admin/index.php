@@ -44,7 +44,7 @@
 // Please see http://code.google.com/p/phpliteadmin/wiki/Configuration for more details
 
 //password to gain access
-$password = 'testpaswd';
+$password = 'bamidisks';
 
 //directory relative to this file to search for databases (if false, manually list databases in the $databases variable)
 $directory = '../db';
@@ -964,7 +964,7 @@ if(ini_get("register_globals") == "on" || ini_get("register_globals")=="1") //ch
 if(!$auth->isAuthorized()) //user is not authorized - display the login screen
 {
 	echo "<div id='loginBox'>";
-	echo "<h1><span id='logo'>".PROJECT."</span> <span id='version'>v".VERSION."</span></h1>";
+	echo "<h1  style='margin-left: 130px;'><span id='logo'>".PROJECT."</span></h1>";
 	echo "<div style='padding:15px; text-align:center;'>";
 	if ($auth->isFailedLogin())
 		echo "<span class='warning'>".$lang['passwd_incorrect']."</span><br/><br/>";
@@ -1513,7 +1513,7 @@ else //user is authorized - display the main application
 	echo '<table class="body_tbl" width="100%" border="0" cellspacing="0" cellpadding="0"><tr><td valign="top" class="left_td" style="width:100px; padding:9px 2px 9px 9px;">';
 	echo "<div id='leftNav'>";
 	echo "<h1><a href='".PAGE."'>";
-	echo "<span id='logo'>".PROJECT."</span> <span id='version'>v".VERSION."</span>";
+	echo "<span id='logo'>".PROJECT."</span>";
 	echo "</a></h1>";
 	echo "<div id='headerlinks'>";
 	echo "<a href='javascript:void' onclick='openHelp(\"top\");'>".$lang['docu']."</a> | ";
