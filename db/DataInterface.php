@@ -11,9 +11,16 @@ abstract class DataInterface
 
     protected $table;
 
+    private $path = 'db/';
+
     public function getConnection()
     {
-        return new SQLite3('db/' . $this->database);
+        return new SQLite3($this->path . $this->database);
+    }
+
+    public function setPath($path)
+    {
+        $this->path = $path;
     }
 
     public function select($where = null)
