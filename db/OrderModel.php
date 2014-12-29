@@ -1,6 +1,6 @@
 <?php
 
-require_once('db/DataInterface.php');
+require_once('DataInterface.php');
 
 /**
  * OrderModel
