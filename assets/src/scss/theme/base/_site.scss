@@ -1,0 +1,31 @@
+body {
+    font-family: $font-family;
+    font-size: $font-size-base;
+}
+
+strong {
+    font-family: $font-family-bold;
+    font-weight: lighter;
+}
+
+@font-face {
+    font-family: 'RalewayRegular';
+    src: url('../../src/fonts/raleway-regular-webfont.ttf');
+}
+
+@font-face {
+    font-family: 'RalewayBold';
+    src: url('../../src/fonts/raleway-bold-webfont.ttf');
+}
+
+hr {
+    border-top: 1px solid #CACCCF;
+}
+
+a,
+button {
+    -webkit-transition: .1s;
+    -moz-transition: .1s;
+    -o-transition: .1s;
+    transition: .1s;
+}

@@ -1,0 +1,21 @@
+{
+    "name": "bami",
+    "private": true,
+    "dependencies": {
+        "bootstrap": "^3.2.0",
+        "jquery": "^2.1.1"
+    },
+    "devDependencies": {
+        "gulp": "^3.8.8",
+        "gulp-concat": "^2.2.0",
+        "gulp-rename": "^1.2.0",
+        "gulp-rimraf": "^0.1.0",
+        "gulp-ruby-sass": "^0.7.1",
+        "gulp-streamify": "0.0.5",
+        "run-sequence": "^0.3.6",
+        "vinyl-source-stream": "^1.0.0"
+    },
+    "browser": {
+        "bootstrap": "./node_modules/bootstrap/dist/js/bootstrap.js"
+    }
+}
